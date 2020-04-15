@@ -32,7 +32,8 @@ public static WebDriver driver;
 	File take=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(take,new File(""));
 	
-	///
+	////////
+		/////
 }
 }
 
