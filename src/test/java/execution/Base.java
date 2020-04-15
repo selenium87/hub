@@ -1,5 +1,11 @@
 package execution;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -18,20 +24,16 @@ public static WebDriver driver;
 		
 		
 		driver.close();
-		//hehe, please don't forget to close browsers!!!!
-		// thanks for reminding me
-		//lets do it 
-		//again
-		//1212121212121212121212
-		
-		//final
-		//great
+
 		
 		
 	}
-	
-	// add screenshots 
-	
+	public void screen() throws IOException {
+	File take=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(take,new File(""));
 	
 	
 }
+}
+
+
